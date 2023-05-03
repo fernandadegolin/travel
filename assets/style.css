@@ -1,0 +1,148 @@
+.calculadora {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+h4 {
+  margin: 1rem 1.7rem;
+}
+
+.gradientNy {
+  margin: 2rem 1.7rem;
+  background-image: linear-gradient(to bottom, #c40200, #db7200, #d1ba00);
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientBarcelona {
+  margin: 2rem 1.7rem;
+  background-image: linear-gradient(to bottom, #c40200, #db7200, #d1ba00);
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientLondres {
+  margin: 2rem 1.7rem;
+  background-image: linear-gradient(to bottom, #012840, #f20505, #fff);
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#buttonNy,
+#buttonBarcelona,
+#buttonLondres,
+.reset {
+  width: 6rem;
+  height: 2rem;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+#buttonNy::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #c40200 0%, #f9f047 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+#buttonBarcelona::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #c40200 0%, #f9f047 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+#buttonLondres::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to right,
+    #012840 0%,
+    #fff 50%,
+    #c40200 100%
+  );
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+#buttonNy:hover::before,
+#buttonBarcelona:hover::before,
+#buttonLondres:hover::before {
+  width: 9em;
+}
+
+input {
+  line-height: 28px;
+  border: 1px solid transparent;
+  border-bottom-color: #777;
+  padding: 0.2rem 0;
+  outline: none;
+  background-color: transparent;
+  color: #0d0c22;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.input:focus,
+input:hover {
+  outline: none;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  border-color: #db7200;
+}
+
+.inputLondres:focus,
+input:hover {
+  outline: none;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  border-color: #7a9cc6;
+}
+
+.input::placeholder {
+  color: #777;
+}
+
+.input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.6rem;
+  padding: 9rem 0;
+}
+
+p {
+  margin-top: 2rem;
+}
