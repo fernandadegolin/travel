@@ -1,5 +1,10 @@
 * {
   margin: 0;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 .container {
@@ -26,7 +31,7 @@ h4 {
 }
 
 .gradientNy {
-  margin: 5rem 1.7rem;
+  margin: 2rem 1.7rem;
   background-image: linear-gradient(to bottom, #ff5e00, #1349a3, #fcfdff);
   color: black;
   background-clip: text;
@@ -56,8 +61,8 @@ h4 {
 #buttonBarcelona,
 #buttonLondres,
 .reset {
-  width: 6rem;
-  height: 2rem;
+  width: 10rem;
+  height: 4rem;
   border-radius: 10px;
   border: none;
   position: relative;
@@ -124,6 +129,7 @@ h4 {
 }
 
 input {
+  width: 20%;
   line-height: 28px;
   border: 1px solid transparent;
   border-bottom-color: #777;
