@@ -1,3 +1,16 @@
+function converterDolar() {
+  let mediaDolar = 5.09;
+  let dolarNy = document.getElementById("dolar");
+  let dolar = dolarNy.value;
+
+  let converteDolar = (dolar * mediaDolar).toFixed(2);
+
+  let valorDolar = document.getElementById("valorDolar");
+  valorDolar.innerHTML = `R$ <strong>${converteDolar}</strong>`;
+
+  dolarNy.value = "";
+}
+
 function converterEuro() {
   let mediaEuro = 5.59;
   let euroBarcelona = document.getElementById("euro");
