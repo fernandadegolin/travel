@@ -16,8 +16,20 @@ h4 {
   text-align: center;
 }
 .faixaNy {
-  background-image: url("https://media.staticontent.com/media/pictures/bfb80462-7604-4711-8bfb-576e01508817");
+  /* background-image: url("https://media.staticontent.com/media/pictures/bfb80462-7604-4711-8bfb-576e01508817"); */
+  background-image: url("https://th.bing.com/th/id/OIG.RItmFptAMvKOcA.CjIIP?pid=ImgGn");
   background-position: center;
+  height: 20vh;
+}
+
+.faixaBarcelona {
+  background-image: url("https://th.bing.com/th/id/OIG.yUVKFqk_2uPfgDCVwOBv?pid=ImgGn");
+  background-position: center;
+  height: 20vh;
+}
+.faixaLondon {
+  background-image: url("https://th.bing.com/th/id/OIG.1l4Wjj2dZuNUr6WJeiH9?pid=ImgGn");
+  background-position: right;
   height: 20vh;
 }
 
